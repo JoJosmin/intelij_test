@@ -17,15 +17,22 @@ apply plugin: 'io.spring.dependency-management'
 
 
 
-group 'org.example'
+group 'com.jojoldu.book'
 version '1.0-SNAPSHOT'
+sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation 'org.springframework.boot:spring-boot-starter-web'
-    testRuntimeOnly 'org.springframework.boot:spring-boot-starter-test'
+    implementation ('org.springframework.boot:spring-boot-starter-web')
+    implementation ('org.projectlombok:lombok')
+    implementation ('org.springframework.boot:spring-boot-starter-data-jpa')
+    implementation('com.h2database:h2')
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'junit:junit:4.13.1'
+
+    testRuntimeOnly ('org.springframework.boot:spring-boot-starter-test')
 }
 
