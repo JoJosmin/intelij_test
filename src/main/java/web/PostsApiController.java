@@ -3,7 +3,9 @@ package web;
 import com.jojoldu.book.springboot.service.posts.PostsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
+import web.dto.PostsResponseDto;
 import web.dto.PostsSaveRequestDto;
+import web.dto.PostsUpdateRequestDto;
 
 @RequiredArgsConstructor
 @RestController
