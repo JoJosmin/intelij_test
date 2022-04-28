@@ -30,9 +30,12 @@ dependencies {
     implementation ('org.projectlombok:lombok')
     implementation ('org.springframework.boot:spring-boot-starter-data-jpa')
     implementation('com.h2database:h2')
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    implementation 'junit:junit:4.13.1'
-
+    implementation ('org.springframework.boot:spring-boot-starter-data-jpa')
+    implementation ('junit:junit:4.13.1')
+    implementation('org.springframework.boot:spring-boot-starter-oauth2-client')
+    implementation ('org.springframework.boot:spring-boot-starter-security')
+    implementation('org.sptingframework.session:spring-session-jdbc')
+    testImplementation("org.springframework.security:spring-security-test")
     testRuntimeOnly ('org.springframework.boot:spring-boot-starter-test')
 }
 
